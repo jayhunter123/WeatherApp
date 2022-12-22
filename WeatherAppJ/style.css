@@ -58,6 +58,7 @@ button:hover {
 
 h1.temp {
     margin: 0;
+    margin-bottom: 0.4em;
 }
 
 .flex{
@@ -66,4 +67,20 @@ h1.temp {
 }
 .description {
     text-transform: capitalize;
+    margin-left: 8px;
+}
+
+.weather.loading {
+    visibility: hidden;
+    max-height: 20px;
+    position: relative;
+}
+
+.weather.loading:after {
+    visibility: visible;
+    content: 'Loading...';
+    color: white;
+    position: absolute;
+    top: 0;
+    left: 20px;
 }
